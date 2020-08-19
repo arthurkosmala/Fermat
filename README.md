@@ -17,15 +17,16 @@ Here comes the interesting part! We can exploit this correspondence and convert 
 
 <img src="https://latex.codecogs.com/svg.latex?V(\vec{x})%20=%20E%20-%20\frac{n(\vec{x})^2}{2m}" />
 
-Next, let a number of particles (all with energy <img src="https://latex.codecogs.com/svg.latex?E" />) leave the source location in different directions and find their trajectories in the potential by numerically integrating Newton's second law. Because of the way we constructed <img src="https://latex.codecogs.com/svg.latex?V" /> out of <img src="https://latex.codecogs.com/svg.latex?n" />, these trajectories do not only satisfy Maupertuis' principle in their potential, but also Fermat's principle in the refractive index distribution that defined our original problem. The particles move just like the light rays that we want to trace! If I got you curious about the analogy between optics and mechanics and if you want to learn something about the underlying connection to wave propagation and Huygens' principle, you might also want to take a look into chapter 9 of Arnold's legendary book 'Mathematical Methods of Classical Mechanics'.
+Next, let a number of particles (all with energy <img src="https://latex.codecogs.com/svg.latex?E" />) leave the source location in different directions and find their trajectories in the potential by numerically integrating Newton's second law.\
+Because of the way we constructed <img src="https://latex.codecogs.com/svg.latex?V" /> out of <img src="https://latex.codecogs.com/svg.latex?n" />, these trajectories do not only satisfy Maupertuis' principle in their potential, but also Fermat's principle in the refractive index distribution that defined our original problem. The particles move just like the light rays that we want to trace! If I got you curious about the analogy between optics and mechanics and if you want to learn something about the underlying connection to wave propagation and Huygens' principle, you might also want to take a look into chapter 9 of V.I. Arnold's legendary book 'Mathematical Methods of Classical Mechanics'.
 
-While this is good to know in theory, I thought it might be even better to have something interactive to play around with. This is why I wrote this (still very preliminary) program which is two things in one: __a Newtonian particle and light ray simulation, as these are just two physical perspectives on the same mathematical problem__. After entering a function for the refractive index distribution, you can either take the viewpoint of simulating light rays in this distribution, or you can switch to a program mode that displays the derived potential, in which the same plotted rays take the meaning of particle trajectories. Let's see how this works out in practice.
+While all this is good to know in theory, I thought it might be even better to have something interactive to play around with. This is why I wrote this (still very preliminary) program which is two things in one: __a Newtonian particle and light ray simulation, as these are just two physical perspectives on the same mathematical problem__. After entering a function for the refractive index distribution, you can either take the viewpoint of simulating light rays in this distribution, or you can switch to a program mode that displays the derived potential, in which the same plotted rays take the meaning of particle trajectories. Let's see how this works out in practice.
 
 ### Example refractive index distributions
 
 After running the code, you will first see an empty black color map and need to enter a refractive index distribution into the text field on top. For inspiration, here are some toy examples to start with.
 
-#### Washed-out spherical lens
+#### Blurred spherical lens
 After entering\
 `2-1/(1+exp(-7*(sqrt((0.5*x)^2+(0.5*y)^2)-1)))`\
 hitting `Animate` and letting the animation run through, the plot will look like this:
@@ -91,7 +92,7 @@ Clicking `Show V` puts the program into a different mode. The color map now indi
 In potential mode, right-clicking will draw an arrow indicating the force acting on a particle at the cursor position (left-clicking anywhere will erase it). Zooming in and sampling force arrows along a trajectory allows to easily see why it follows its given path.
 
 <details>
-  <summary> A zoomed-in view with a force arrow. </summary>
+  <summary> A zoomed-in view with a force arrow: </summary>
   
   ![alt text](https://user-images.githubusercontent.com/69654234/90696569-cb214a00-e27c-11ea-95f5-8c82e8bb87e8.png)
   
