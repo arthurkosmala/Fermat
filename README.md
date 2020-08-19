@@ -19,8 +19,7 @@ Here comes the interesting part! We can exploit this correspondence and convert 
 
 Next, let a number of particles (all with energy <img src="https://latex.codecogs.com/svg.latex?E" />) leave the source location in different directions and find their trajectories in the potential by numerically integrating Newton's second law. Because of the way we constructed <img src="https://latex.codecogs.com/svg.latex?V" /> out of <img src="https://latex.codecogs.com/svg.latex?n" />, these trajectories do not only satisfy Maupertuis' principle in their potential, but also Fermat's principle in the refractive index distribution that defined our original problem. The particles move just like the light rays that we want to trace!
 
-
-While this is good to know in theory, I thought it might be even better to have something interactive to play around with. This is why I wrote this program which is two things in one: __a Newtonian particle and light ray simulation, as these are just two physical perspectives on the same mathematical problem__. After entering a function for the refractive index distribution, you can either take the viewpoint of simulating light rays in this distribution, or you can switch to a program mode that displays the derived potential, in which the same plotted rays take the meaning of particle trajectories. Let's see how this works out in practice.
+While this is good to know in theory, I thought it might be even better to have something interactive to play around with. This is why I wrote this (still very preliminary) program which is two things in one: __a Newtonian particle and light ray simulation, as these are just two physical perspectives on the same mathematical problem__. After entering a function for the refractive index distribution, you can either take the viewpoint of simulating light rays in this distribution, or you can switch to a program mode that displays the derived potential, in which the same plotted rays take the meaning of particle trajectories. Let's see how this works out in practice.
 
 ### Example refractive index distributions
 
@@ -77,5 +76,23 @@ which gets us
   <summary> this plot: </summary>
   
   ![alt text](https://user-images.githubusercontent.com/69654234/90681517-d9af3780-e263-11ea-9744-4bd08e712152.png)
+  
+</details>
+
+### Potential mode
+Clicking `Show V` puts the program into a different mode. The color map now indicates not the refractive index but its corresponding potential (alluding to a height map in geographic color scheme). The rays now have the interpretation of particle trajectories in the potential.
+<details>
+  <summary> An example plot in potential mode: </summary>
+  
+  ![alt text](https://user-images.githubusercontent.com/69654234/90696546-be045b00-e27c-11ea-83c6-ae04766d2bd3.png)
+  
+</details>
+
+In potential mode, right-clicking will draw an arrow indicating the force acting on a particle at the cursor position (left-clicking anywhere will erase it). Zooming in and sampling force arrows along a trajectory allows to easily see why it follows its given path.
+
+<details>
+  <summary> A zoomed-in view with a force arrow. </summary>
+  
+  ![alt text](https://user-images.githubusercontent.com/69654234/90696569-cb214a00-e27c-11ea-95f5-8c82e8bb87e8.png)
   
 </details>
