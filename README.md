@@ -1,6 +1,9 @@
 # Readme
 ### Note
 To successfully compile this code, you need to have Qt installed on your system. A simple option is to download the [Qt Creator IDE](https://www.qt.io/product/development-tools).
+
+---
+
 ### Fermat: a 2-in-1 Newtonian particle and light ray simulation
 So what is this project all about? If you'd like a dive into some physical background, here we go. Let's assume we want to know which path a classical particle with conserved energy takes between a fixed beginning and ending point. It turns out that, among all paths <img src="https://latex.codecogs.com/svg.latex?\Gamma" /> that the particle _could_ take between the two points, the one prescribed by classical mechanics is the one that minimizes the __abbreviated action__ functional
 
@@ -21,6 +24,8 @@ Next, let a number of particles (all with energy <img src="https://latex.codecog
 Because of the way we constructed <img src="https://latex.codecogs.com/svg.latex?V" /> out of <img src="https://latex.codecogs.com/svg.latex?n" />, these trajectories do not only satisfy Maupertuis' principle in their potential, but also Fermat's principle in the refractive index distribution that defined our original problem. The particles move just like the light rays that we want to trace! If I got you curious about the analogy between optics and mechanics and if you want to learn something about the underlying connection to wave propagation and Huygens' principle, you might also want to take a look into chapter 9 of V.I. Arnold's legendary book 'Mathematical Methods of Classical Mechanics'.
 
 While all this is good to know in theory, I thought it might be even better to have something interactive to play around with. This is why I wrote this (still very preliminary) program which is two things in one: __a Newtonian particle and light ray simulation, as these are just two physical perspectives on the same mathematical problem__. After entering a function for the refractive index distribution, you can either take the viewpoint of simulating light rays in this distribution, or you can switch to a program mode that displays the derived potential, in which the same plotted rays take the meaning of particle trajectories. Let's see how this works out in practice.
+
+---
 
 ### Example refractive index distributions
 
@@ -79,6 +84,8 @@ which gets us
   ![alt text](https://user-images.githubusercontent.com/69654234/90681517-d9af3780-e263-11ea-9744-4bd08e712152.png)
   
 </details>
+
+---
 
 ### Potential mode
 Clicking `Show V` puts the program into a different mode. The color map now indicates not the refractive index but its corresponding potential (alluding to a height map in geographic color scheme). The rays now have the interpretation of particle trajectories in the potential.
