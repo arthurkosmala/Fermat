@@ -5,14 +5,14 @@ To successfully compile this code, you need to have Qt installed on your system.
 ---
 
 ### Fermat: a 2-in-1 Newtonian particle and light ray simulation
-So what is this project all about? If you'd like a dive into some physical background, here we go. Let's assume we want to know which path a classical particle with conserved energy takes between a fixed beginning and ending point. It turns out that, among all paths <img src="https://latex.codecogs.com/svg.latex?\Gamma" /> that the particle _could_ take between the two points, the one prescribed by classical mechanics is the one that minimizes the __abbreviated action__ functional
+So what is this project all about? If you'd like a dive into some physical background, here we go. Let's assume we want to know which path a classical particle with conserved energy takes between a fixed beginning and ending point. It turns out that, among all paths <img src="https://latex.codecogs.com/svg.latex?\Gamma" /> that the particle _could_ take between the two points, the one prescribed by classical mechanics is the one for which the __abbreviated action__ functional
 
 <img src="https://latex.codecogs.com/svg.latex?\int_\Gamma%20\!%20\vec{p}(\vec{x})%20\,%20\mathrm{d}\vec{s}%20=%20\int_\Gamma%20\!%20\sqrt{2m(E-V(\vec{x}))}%20\,%20\mathrm{d}s" />
 
-This is known as [__Maupertuis' principle__](https://en.wikipedia.org/wiki/Maupertuis%27s_principle).
+becomes stationary. This is known as [__Maupertuis' principle__](https://en.wikipedia.org/wiki/Maupertuis%27s_principle).
 
 
-In optics, something suspiciously similar is going on. [__Fermat's principle__](https://en.wikipedia.org/wiki/Fermat%27s_principle) states that the path <img src="https://latex.codecogs.com/svg.latex?\Gamma" /> that a light ray takes between two points is the one that needs the shortest time to traverse. As light moves at an <img src="https://latex.codecogs.com/svg.latex?n"/>-th fraction of its vacuum speed given a refractive index <img src="https://latex.codecogs.com/svg.latex?n"/>, satisfying Fermat's principle amounts to minimizing the __optical path length__
+In optics, something suspiciously similar is going on. [__Fermat's principle__](https://en.wikipedia.org/wiki/Fermat%27s_principle) states that the path <img src="https://latex.codecogs.com/svg.latex?\Gamma" /> that a light ray takes between two points is the one that makes the traversal time stationary. As light moves at an <img src="https://latex.codecogs.com/svg.latex?n"/>-th fraction of its vacuum speed given a refractive index <img src="https://latex.codecogs.com/svg.latex?n"/>, satisfying Fermat's principle amounts to a stationary __optical path length__
 
 <img src="https://latex.codecogs.com/svg.latex?\int_\Gamma%20\!%20n(\vec{x})%20\,%20\mathrm{d}s" />
 
