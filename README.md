@@ -36,7 +36,7 @@ After entering\
 `2-1/(1+exp(-7*(sqrt((0.5*x)^2+(0.5*y)^2)-1)))`\
 hitting `Animate` and letting the animation run through, the plot will look like this:
 ![alt text](https://user-images.githubusercontent.com/69654234/90677896-4a535580-e25e-11ea-982b-209687034c54.png)
-The function may look a bit messy, but think about it like this: plugging the radius into a Heaviside step function would give us a precisely disk-shaped distribution around the origin. Replacing the step by a sigmoid function washes out the disk around its boundary.
+The function may look a bit messy, but think about it like this: plugging the (shifted) radius into a Heaviside step function would give us a precisely disk-shaped distribution around the origin. Replacing the step by a sigmoid function washes out the disk around its boundary.
 
 #### Biconvex lens
 Intersecting (i.e., multiplying the functions of) two eccentrically shifted spheres gets us a biconvex lens. Entering the function\
